@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Page</title>    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <fieldset>
+        <legend>Please leave your feedback below</legend>
+        <!-- Bagian input nama -->
+        <div class="title">Name : *</div>
+            <input type="text" id="name" placeholder="Your name here">
+            <span id="notifName"></span>
+
+        <!-- Bagian input message -->
+        <div class="title">Message : *</div>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your message here"></textarea>
+            <span id="notifMessage"></span>
+        
+        <!-- Bagian Captcha -->
+        <p style="font-weight: 600;">Enter the correct number</p>
+        <p class="title">
+            <span id="captcha1"></span>
+            &nbsp;+&nbsp;
+            <span id="captcha2"></span>
+            &nbsp;=&nbsp;
+            <input type="text" size="2" id="sumCaptcha"> *<span id="notifCaptcha"></span>
+            <p class="required">*) Required field</p>
+        </p>
+
+        <!-- Tombol submit -->
+        <button onclick="submitButton()">Send Feedback</button>
+    </fieldset>
+</body>
+<script src="index.js"></script>
+</html>

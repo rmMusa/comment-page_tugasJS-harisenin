@@ -1,0 +1,57 @@
+* {
+    background-color: rgb(26, 26, 26);
+    color: wheat; 
+    font-family: '3ds', 'Roboto';           
+}
+
+fieldset {
+    position: fixed;            
+    width: 30%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 20px;
+}
+
+legend {
+    font-size: x-large;
+}
+
+input, textarea {
+    background-color: wheat;
+    margin: 5px 0 15px 0;
+    color: black;
+}
+
+#notifName, #notifMessage, #notifCaptcha {            
+    color: tomato;
+    font-size: small;
+    font-style: italic;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+.title, #captcha1, #captcha2 {
+    color: white;
+}
+
+.required {
+    font-size: 12px;
+    margin-bottom: -5px;
+}
+
+button {
+    background-color: rgb(45, 45, 45);
+    padding: 10px;
+    border-color: wheat; 
+    border-radius: 10px;
+    font-size: 1em;    
+}
+
+button:hover {
+    background-color: rgb(88, 88, 88);
+    border-color: rgb(202, 202, 202);
+    color: whitesmoke;
+    transition: 0.3s;
+}
